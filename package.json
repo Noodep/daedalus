@@ -1,0 +1,23 @@
+{
+  "name": "daedalus",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./lib/daedalus.js ./ 8438",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noodep/daedalus.git"
+  },
+  "author": "noodep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noodep/daedalus/issues"
+  },
+  "homepage": "https://github.com/Noodep/daedalus#readme",
+  "devDependencies": {
+    "goblin": "git+https://github.com/Noodep/goblin.git#develop"
+  }
+}

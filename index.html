@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<title>Daedalus</title>
+		<link rel='stylesheet' type='text/css' href='/css/screen.css'>
+		<script type='module'/>
+			import Daedalus from '/js/daedalus.js';
+
+
+			document.addEventListener('DOMContentLoaded', init);
+
+			function init() {
+				const canvas = document.getElementById('dungeon');
+				const renderer = canvas.getContext('2d');
+				const width = canvas.clientWidth;
+				const height = canvas.clientHeight;
+
+				const daedalus = new Daedalus(width, height);
+
+				canvas.width = width;
+				canvas.height = height;
+
+				daedalus.generate(1e3);
+				daedalus.render(renderer);
+			}
+
+		</script>
+	</head>
+	<body>
+		<canvas id='dungeon'></canvas>
+	</body>
+</html>
+
